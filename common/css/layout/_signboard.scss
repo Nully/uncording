@@ -1,0 +1,44 @@
+@charset "utf-8";
+.signboard {
+  background: url(../images/bg-main.gif) center top no-repeat $bg_default;
+  color: #fff;
+  padding: 50px 0px 50px;
+  text-align:center;
+}
+.signboard h1,
+.signboard h2 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.signboard h1{
+  margin-bottom: 20px;
+}
+.signboard .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:1079px){
+.signboard {
+  padding: 30px 10px 30px;
+}
+.signboard h1,
+.signboard h2 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.signboard h1{
+  margin-bottom: 30px;
+}
+.signboard .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width:640px){
+.signboard h1 img,
+.signboard p.logo img {
+  max-width: 150px;
+}
+}

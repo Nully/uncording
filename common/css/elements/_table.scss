@@ -1,0 +1,21 @@
+@charset "utf-8";
+.normalTable {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+
+.normalTable th {
+  padding: 7px 10px 5px;
+  min-width: 80px;
+  background: #efefef;
+  border: 1px solid #ccc;
+}
+
+.normalTable td {
+  padding: 7px 10px 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+

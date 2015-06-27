@@ -1,0 +1,10 @@
+@charset "utf-8";
+@media #{$media_middle}{
+#header,
+.container,
+.topicPath,
+#footer .anchorLink,
+#footer .footer_content {
+  width: 100%;
+}
+}

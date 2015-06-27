@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@mixin link-color($n) {
+  color: $n;
+  &:visited {
+    color: darken($n, 10%);
+  }
+  &:hover {
+    color: lighten($n, 10%);
+  }
+  &:active {
+    color: lighten($n, 10%);
+  }
+}
+
+a {
+  @include link-color($a_link);
+//    -webkit-transition: all 0.2s linear;
+//    transition: all 0.2s linear;
+}

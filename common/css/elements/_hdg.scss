@@ -1,0 +1,95 @@
+@charset "utf-8";
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-family: Helvetica,sans-serif;
+}
+
+h1 {
+  font-size: fz(48);
+}
+
+h2 {
+  font-size: fz(30);
+}
+
+h3 {
+  font-size: fz(24);
+}
+
+h4 {
+  font-size: fz(18);
+}
+
+h5 {
+  font-size: fz(16);
+}
+
+h6 {
+  font-size: fz(14);
+}
+
+.hdg {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.hdg-content {
+  font-weight: normal;
+  padding: 50px 0;
+}
+.hdg_A {
+  color: $color_primary;
+}
+.hdg_B {
+  color: $color_success;
+}
+.hdg_C {
+  color: $color_warning;
+}
+.hdg_D {
+  color: $color_danger;
+}
+.hdg_E {
+  color: $color_info;
+}
+.hdg_F {
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media #{$media_middle}{
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+}
+
+@media #{$media_small}{
+}

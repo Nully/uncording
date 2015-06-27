@@ -1,0 +1,76 @@
+@charset "utf-8";
+.signboard .nav_flat {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 0;
+  border-top: 1px solid #4F627E;
+  border-right: 1px solid #4F627E;
+}
+
+.signboard .nav_flat li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #4F627E;
+  border-right: 1px solid #011631;
+  border-bottom: 1px solid #011631;
+}
+.signboard .nav_flat li a {
+  font-size: 8px;
+  color: #ffffff;
+  display: block;
+  white-space: nowrap;
+  padding: 15px 10px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.signboard .nav_flat li a span {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}
+.signboard .nav_flat li a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav_flat {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #ddd;
+}
+
+.nav_flat li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #ddd;
+}
+.nav_flat li a {
+  display: block;
+  white-space: nowrap;
+  padding: 10px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+@media screen and (max-width:640px){
+.signboard .nav_flat {
+  margin: 10px 0 0;
+}
+.signboard .nav_flat li a {
+  font-size: 12px;
+  padding: 10px 10px;
+}
+.signboard .nav_flat li a span {
+  display: none;
+}
+}

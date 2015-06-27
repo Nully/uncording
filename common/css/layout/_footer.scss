@@ -1,0 +1,120 @@
+@charset "utf-8";
+#footer {
+  border-top: $color_red solid 5px;
+  clear: both;
+  padding: 30px 10px;
+  margin: 0;
+  _height: 150px;
+  position: relative;
+  text-shadow: none;
+  .footer-content{
+    width: $width_wrap;
+    margin: 0 auto;
+    padding: 20px 0px 80px;
+    .hdg__site-title {
+      display: inline-block;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 35px;
+      margin: 0;
+      color: $color_black;
+      a {
+        display: inline-block;
+        padding: 5px 0;
+        text-decoration: none;
+        color: $color_black;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    nav {
+      float: right;
+      clear: none;
+      display: inline-block;
+      margin-top: 15px;
+      .signboard-nav {
+        li {
+          display: inline-block;
+          padding: 0 10px;
+           a {
+            position: relative;
+            padding-left: 20px;
+            text-decoration: none;
+            @include link-color($color_black);
+            @include link-icon-arrow-left__black;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    small {
+      clear: both;
+      display: block;
+    }
+  }
+}
+
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media #{$media_middle}{
+  #footer {
+    padding: 0;
+    .footer-content{
+      width: $width_full;
+      padding: 20px 0px 80px;
+      .hdg__site-title {
+        text-align: center;
+        display: block;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0;
+        color: $color_black;
+        a {
+          display: block;
+          padding: 5px 0;
+          text-align: center;
+          text-decoration: none;
+          color: $color_black;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      nav {
+        float: none;
+        clear: both;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        .signboard-nav {
+          margin-left: 0;
+          li {
+            display: inline-block;
+            padding: 0 10px;
+             a {
+              position: relative;
+              padding-left: 20px;
+              text-decoration: none;
+              @include link-color($color_black);
+              @include link-icon-arrow-left__black;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      small {
+        clear: both;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}

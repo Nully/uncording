@@ -1,0 +1,13 @@
+@charset "utf-8";
+img {
+  border: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+img.img_A {
+  border: 5px solid #dddddd;
+}

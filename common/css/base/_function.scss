@@ -1,0 +1,127 @@
+@charset "utf-8";
+//width
+$width_wrap: 1200px;
+$width_full: 100%;
+$width_main: 945px;
+$width_side: 240px;
+
+//media width
+$media_large: "screen and (min-width:1200px)";
+$media_middle: "screen and (max-width:1199px)";
+$media_small: "screen and (max-width:640px)";
+
+//path
+$img_path: "/common/images/";
+
+//font color
+$color_default: #222222;
+$color_white: #FFFFFF;
+$color_black: #000000;
+$color_red: #BB1F1F;
+$color_primary: #1054A0;
+$color_success: #007C81;
+$color_warning: #8F7104;
+$color_danger: #BC2020;
+$color_info: #5FBFDB;
+
+//background color
+$bg_default: #999999;
+$bg_white: #FFFFFF;
+$bg_black: #000000;
+$bg_red: #BB1F1F;
+$bg_primary: #1054A0;
+$bg_success: #007C81;
+$bg_warning: #8F7104;
+$bg_danger: #BC2020;
+$bg_info: #5FBFDB;
+
+//link color
+$a_link: #00BBDD;
+$a_visited: #009BBD;
+$a_hover: #22DDFF;
+$a_active: #22DDFF;
+
+//prefix
+$set_prefix: -webkit-, -moz-, -o-, null;
+
+//font-size
+$fontSizeList: 62%, 70%, 77%, 85%, 93%, 100%, 108%, 116%, 124%, 131%, 139%, 147%, 154%, 162%, 170%, 177%, 185%, 193%, 200%, 208%, 216%, 224%, 231%, 239%, 247%, 254%, 262%, 270%, 277%, 285%, 293%, 300%, 308%;
+
+//font-size: fz(10);
+@function fz($size) {
+    @if $size < 8 {
+        $size: 8;
+    }
+    @if $size > 40 {
+        $size: 40;
+    }
+    @return nth($fontSizeList, $size - 7);
+}
+
+//icon
+
+//@include link-icon-arrow();
+@mixin link-icon-arrow-right($color: #f0f0f0) {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    margin-top: -7px;
+    border-top: 3px solid $color;
+    border-right: 3px solid $color;
+    @each $prefix in $set_prefix {
+      #{$prefix}transform: rotate(45deg);
+    }
+  }
+}
+@mixin link-icon-arrow-left($color: #f0f0f0) {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    margin-top: -5px;
+    border-top: 3px solid $color;
+    border-right: 3px solid $color;
+    @each $prefix in $set_prefix {
+      #{$prefix}transform: rotate(45deg);
+    }
+  }
+}
+@mixin link-icon-arrow-right__black($color: #666666) {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    margin-top: -7px;
+    border-top: 3px solid $color;
+    border-right: 3px solid $color;
+    @each $prefix in $set_prefix {
+      #{$prefix}transform: rotate(45deg);
+    }
+  }
+}
+@mixin link-icon-arrow-left__black($color: #666666) {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    margin-top: -5px;
+    border-top: 3px solid $color;
+    border-right: 3px solid $color;
+    @each $prefix in $set_prefix {
+      #{$prefix}transform: rotate(45deg);
+    }
+  }
+}

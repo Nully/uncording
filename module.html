@@ -1,0 +1,741 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="common/css/basic.css">
+<title>XXXXXX_sitetitle | XXXXXX_description</title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <header id="header" class="site-header" role="banner">
+    <div class="header-content">
+      <p class="hdg__site-title"><a href="/" itemprop="url">SiteTitle</a></p>
+      <nav role="navigation">
+        <ul class="signboard-nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+          <li itemprop="name"><a href="module.html" itemprop="url">Module</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+        </ul><!-- .signboard-nav end -->
+      </nav><!-- nav end -->
+    </div><!-- .header-content end -->
+  </header><!-- header end -->
+  <div class="signboard">
+    <h1 class="hdg-index">h1_text</h1>
+  </div>
+  <main role="main">
+    <div class="container">
+      <div class="main-content">
+        <p class="topicPath" itemprop="breadcrumb"><a href="/">Home</a> &gt; <a href="#" title="カテゴリーインデックスへ戻る">カテゴリー</a> &gt; <span class="current">記事タイトル</span></p>
+
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg">モジュール一覧</h2>
+<p>さまざまなモジュールを用意しておくことでさまざまな状況に応じたレイアウトの再現を行えるようにしています。</p>
+<div class="row">
+<div class="col_x_12">
+<h2 class="hdg_A">locator</h2>
+<p>1カラムモジュール。<code>.row</code>や<code>.locator</code>は<code>section</code>と<code>.container</code>をセットにして使う。横幅（width）は<code>.container</code>で指定している960pxがデフォルト。<br>
+<code>margin: 0 auto;</code>を指定。<br>
+メディアクエリで横幅（width）は100%に可変。</p>
+<p><code>.row</code>ではグリッドレイアウトを採用している。合計12カラムまで。<code>.col_x_1</code>、<code>.col_x_2</code>など最後尾の数字を変更することでレイアウトの可変が可能。余白が必要ではない場合は<code>.row_n</code>と指定する。<br>
+こちらもメディアクエリで横幅（width）は100%に可変。</p>
+<p>それぞれのカラムには<code>padding: 0 15px</code>をあてている。グリッドレイアウトでレイアウト調整をする際は<code>.container</code>の<code>width: 960px</code>から緻密な計算をして制作をする必要がある。</p>
+<p>代わりに簡単にレイアウトを調整ができるlocator_Xも用意しているので、グリッドレイアウトでデザインをしていない場合はこちらで十分レイアウト調整が可能と考えます。</p>
+<p><strong>locator_Xの入れ子は禁止。</strong></p>
+</div>
+</div><!-- row end -->
+
+<div class="row">
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+<div class="col_x_1"><img src="common/images/dummy300x300.gif" alt="img300x300"></div>
+</div><!-- row end -->
+
+<div class="row">
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+</div><!-- row end -->
+
+<div class="row_n">
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+<div class="col_x_3">
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category_A end -->
+</div>
+</div><!-- row_n end -->
+
+<div class="row">
+<div class="col_x_4 col_r">.col_x_4.col_r<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+<div class="col_x_4 col_w">.col_x_4.col_w<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+<div class="col_x_4 col_l">.col_x_4.col_l<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+</div><!-- row end -->
+<div class="row">
+<div class="col_x_6">.col_x_6<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+<div class="col_x_6">.col_x_6<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+</div><!-- row end -->
+<div class="row">
+<div class="col_x_9">.col_x_9<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+<div class="col_x_3">.col_x_3<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+</div><!-- row end -->
+<div class="locator_A">
+<h2 class="hdg_A">.locator_A</h2>
+<div class="col_1">
+<p>2カラムモジュール1:1<br>
+<code>width: 49%;</code></p>
+</div>
+<div class="col_2">
+<p>2カラムモジュール1:1<br>
+<code>width: 49%;</code></p>
+</div>
+</div><!-- locator_A end -->
+<div class="locator_A flat">
+<h2 class="hdg_A">.locator_A.flat</h2>
+<div class="col_1">
+<p>2カラムモジュール1:1<br>
+<code>width: 49%;</code></p>
+</div>
+<div class="col_2">
+<p>2カラムモジュール1:1<br>
+<code>width: 49%;</code></p>
+</div>
+</div><!-- locator_A end -->
+
+<div class="locator_B">
+<h2 class="hdg_A">.locator_B</h2>
+<div class="col_1">
+<p>2カラムモジュール1:2<br>
+<code>width: 33%;</code></p>
+</div>
+<div class="col_2">
+<p>2カラムモジュール1:2<br>
+<code>width: 65%;</code></p>
+</div>
+</div><!-- locator_B end -->
+<div class="locator_B flat">
+<h2 class="hdg_A">.locator_B.flat</h2>
+<div class="col_1">
+<p>2カラムモジュール1:2<br>
+<code>width: 33%;</code></p>
+</div>
+<div class="col_2">
+<p>2カラムモジュール1:2<br>
+<code>width: 65%;</code></p>
+</div>
+</div><!-- locator_B end -->
+
+<div class="locator_C">
+<h2 class="hdg_A">.locator_C</h2>
+<div class="col_2">
+<p>2カラムモジュール2:1<br>
+<code>width: 33%;</code></p>
+</div>
+<div class="col_1">
+<p>2カラムモジュール2:1<br>
+<code>width: 65%;</code></p>
+</div>
+</div><!-- locator_C end -->
+<div class="locator_C flat">
+<h2 class="hdg_A">.locator_C.flat</h2>
+<div class="col_2">
+<p>2カラムモジュール2:1<br>
+<code>width: 33%;</code></p>
+</div>
+<div class="col_1">
+<p>2カラムモジュール2:1<br>
+<code>width: 65%;</code></p>
+</div>
+</div><!-- locator_C end -->
+
+<div class="locator_D">
+<h2 class="hdg_A">.locator_D</h2>
+<div class="col_1">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+<div class="col_2">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+<div class="col_3">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+</div><!-- locator_D end -->
+<div class="locator_D flat">
+<h2 class="hdg_A">.locator_D.flat</h2>
+<div class="col_1">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+<div class="col_2">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+<div class="col_3">
+<p>3カラムモジュール<br>
+<code>width: 32.6%;</code></p>
+</div>
+</div><!-- locator_D end -->
+
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">ボックスモジュール一覧</h2>
+<div class="box">
+<h2 class="hdg">box</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box end -->
+<div class="box__primary">
+<h2 class="hdg_A">box__primary</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__primary end -->
+<div class="box__success">
+<h2 class="hdg_B">box__success</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__success end -->
+<div class="box__warning">
+<h2 class="hdg_C">box__warning</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__warning end -->
+<div class="box__danger">
+<h2 class="hdg_D">box__danger</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__danger end -->
+<div class="box__info">
+<h2 class="hdg_E">box__info</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__info end -->
+<div class="box__black">
+<h2>box__black</h2>
+<p class="hdg">テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__black end -->
+<div class="box__none">
+<h2>box__none</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- box__none end -->
+
+<div class="category">
+<h2>category</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category end -->
+<div class="category__primary">
+<h2>category__primary</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__primary end -->
+<div class="category__success">
+<h2>category__success</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__success end -->
+<div class="category__warning">
+<h2>category__warning</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__warning end -->
+<div class="category__danger">
+<h2>category__danger</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__danger end -->
+<div class="category__info">
+<h2>category__info</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__info end -->
+<div class="category__black">
+<h2>category__black</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__black end -->
+<div class="category__none">
+<h2>category__none</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__none end -->
+<div class="category--border">
+<h2>category--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category end -->
+<div class="category__primary--border">
+<h2>category__primary--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__primary end -->
+<div class="category__success--border">
+<h2>category__success--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__success end -->
+<div class="category__warning--border">
+<h2>category__warning--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__warning end -->
+<div class="category__danger--border">
+<h2>category__danger--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__danger end -->
+<div class="category__info--border">
+<h2>category__info--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__info end -->
+<div class="category__black--border">
+<h2>category__black--border</h2>
+<p>テキストテキストテキストテキストテキストテキスト</p>
+</div><!-- category__black end -->
+<div class="circle">.circle</div>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">hタグ一覧</h2>
+<h1>h1 font-size:48px;</h1>
+<h2>h2 font-size:30px;</h2>
+<h3>h3 font-size:24px;</h3>
+<h4>h4 font-size:18px;</h4>
+<h5>h5 font-size:16px;</h5>
+<h6>h6 font-size:13px;</h6>
+<h1 class="hdg">h1.hdg</h1>
+<h2 class="hdg_A">h2.hdg_A</h2>
+<h2 class="hdg_B">h2.hdg_B</h2>
+<h3 class="hdg_C">h3.hdg_C</h3>
+<h4 class="hdg_D">h4.hdg_D</h4>
+<h5 class="hdg_E">h5.hdg_E</h5>
+<h6 class="hdg_F">h6.hdg_F</h6>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">テキストモジュール一覧</h2>
+<p>通常テキスト</p>
+<p><strong>強調テキスト</strong></p>
+<p class="red">赤字テキスト</p>
+<p class="notes">注釈テキスト</p>
+<p><span class="italic">斜体テキスト</span></p>
+<p>文中リンクテキスト<a href="#" class="inside">テキスト</a>テキスト</p>
+<p>code <code>#id</code> <code>.class</code></p>
+<p>kbd <kbd>cmd</kbd> <kbd>ctrl + C</kbd></p>
+<p>sup 注釈<sup>*</sup> 注釈<sup>2</sup></p>
+<blockquote  title="blockquote要素" cite="http://ma-san.org/"><p>blockquote</p></blockquote>
+<pre title="pre">
+unko unko text test EVA
+asdasdas
+</pre>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">リンクモジュール一覧</h2>
+<p class="normalLink"><a href="#">ふつうのリンク</a></p>
+<p class="normalLink"><a href="#" target="_blank">別Winリンク</a></p>
+<p class="continue"><a href="#" title="続きを読む">続きを読む</a></p>
+<ul class="linkList">
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+</ul>
+<ul class="linkList_A">
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+</ul>
+<ul class="linkList_B">
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+</ul>
+<ul class="linkList_C">
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+<li><a href="#">リンクリスト</a></li>
+</ul>
+<ul class="pager clearFix">
+<li class="newer">Newer: <a href="#" title="1つ新しい記事">1つ新しい記事</a></li>
+<li class="older">Older: <a href="#" title="1つ古い記事">1つ古い記事</a></li>
+</ul>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">ボタンモジュール一覧</h2>
+<p>テキスト</p>
+<p class="center"><a href="#" class="btn">btn</a> <a href="#" class="btn-bl">btn-bl</a> <a href="#" class="btn-primary">btn-primary</a> <a href="#" class="btn-success">btn-success</a> <a href="#" class="btn-warning">btn-warning</a> <a href="#" class="btn-danger">btn-danger</a> <a href="#" class="btn-info">btn-info</a> <a href="#" class="btn-clear">btn-clear</a></p>
+
+<p class="center"><a href="#" class="btn half">btn half</a> <a href="#" class="btn-bl half">btn-bl half</a></p>
+<p class="center"><a href="#" class="btn-primary half">btn-primary half</a> <a href="#" class="btn-success half">btn-success half</a></p>
+<p class="center"><a href="#" class="btn-warning half">btn-warning half</a> <a href="#" class="btn-danger half">btn-danger half</a></p>
+<p class="center"><a href="#" class="btn-info half">btn-info half</a> <a href="#" class="btn-clear half">btn-clear half</a></p>
+
+<p class="center"><a href="#" class="btn full">btn full</a></p>
+<p class="center"><a href="#" class="btn-bl full">btn-bl full</a></p>
+<p class="center"><a href="#" class="btn-primary full">btn-primary full</a></p>
+<p class="center"><a href="#" class="btn-success full">btn-success full</a></p>
+<p class="center"><a href="#" class="btn-warning full">btn-warning full</a></p>
+<p class="center"><a href="#" class="btn-danger full">btn-danger full</a></p>
+<p class="center"><a href="#" class="btn-info full">btn-info full</a></p>
+<p class="center"><a href="#" class="btn-clear full">btn-clear full</a></p>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">ナビゲーションモジュール一覧</h2>
+<ul class="nav_flat">
+<li><a href="#">LinkText</a></li>
+<li><a href="#">LinkText</a></li>
+<li><a href="#">LinkText</a></li>
+<li><a href="#">LinkText</a></li>
+</ul>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">パンくずリストモジュール一覧</h2>
+<p>前から思ってたんだけど、パンくずリストって、リストじゃなくないですか？</p>
+<div class="topicPath" itemprop="breadcrumb"><a href="/">Home</a> &gt; module</div>
+<p class="topicPath" itemprop="breadcrumb"><a href="/">Home</a> &gt; <a href="#" title="カテゴリーインデックスへ戻る">カテゴリー</a> &gt; <span class="current">記事タイトル</span></p>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">リストモジュール一覧</h2>
+<ul class="list">
+<li>箇条書き項目
+<ul>
+<li>入れ子箇条書き項目</li>
+<li>入れ子箇条書き項目</li>
+<li>入れ子箇条書き項目</li>
+</ul>
+</li>
+<li>箇条書き項目</li>
+<li>箇条書き項目</li>
+</ul>
+<ol class="list">
+<li>箇条書き項目
+<ol>
+<li>入れ子箇条書き項目（1階層目のみ許可）</li>
+<li>入れ子箇条書き項目（1階層目のみ許可）</li>
+<li>入れ子箇条書き項目（1階層目のみ許可）</li>
+</ol>
+</li>
+<li>箇条書き項目</li>
+<li>箇条書き項目</li>
+</ol>
+<ul class="notes">
+<li>※注釈リスト</li>
+<li>※注釈リスト</li>
+</ul>
+<dl class="glossary">
+<dt>定義名リスト</dt>
+<dd>定義内容テキスト</dd>
+<dt>ラーメンメニュー一覧</dt>
+<dd>
+<ul>
+<li>醤油拉麺</li>
+<li>味噌拉麺</li>
+<li>塩拉麺</li>
+<li>豚骨拉麺</li>
+<li>つけ麺</li>
+</ul>
+</dd>
+<dt>定義名リスト</dt>
+<dd>定義内容テキスト</dd>
+</dl>
+<ul class="headline">
+<li><span class="date">2014-0X-XX 23:16</span><a href="#" title="value">リンク先のタイトル</a></li>
+<li><span class="date">2014-0X-XX 23:16</span><a href="#" title="value">リンク先のタイトル</a></li>
+<li><span class="date">2014-0X-XX 23:16</span><a href="#" title="value">リンク先のタイトル</a></li>
+<li><span class="date">2014-0X-XX 23:16</span><a href="#" title="value">リンク先のタイトル</a></li>
+</ul>
+<ul class="news_list">
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><div class="category">カテゴリー</div><a href="URL">テキストテキストテキストテキスト</a></li>
+</ul>
+</li>
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><a href="URL">テキストテキストテキストテキストテキストテキスト</a></li>
+</ul>
+</li>
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><div class="category primary">カテゴリー</div>テキストテキストテキストテキストテキストテキストテキストテキスト</li>
+</ul>
+</li>
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><div class="category success">カテゴリー</div>テキストテキストテキストテキストテキストテキストテキストテキスト</li>
+</ul>
+</li>
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><div class="category warning">カテゴリー</div>テキストテキストテキストテキストテキストテキストテキストテキスト</li>
+</ul>
+</li>
+<li><span class="date">2014-0X-XX</span>
+<ul>
+<li><div class="category danger">カテゴリー</div><a href="URL">テキストテキストテキストテキスト</a></li>
+<li><div class="category info">カテゴリー</div><a href="URL">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</a></li>
+</ul>
+</li>
+</ul>
+
+<ul class="line_list">
+<li class="line event topic">
+<span class="time">2011/08/24</span>
+<span class="message"><a href="#">トピックス</a></span>
+<span class="address">http://ma-san.org/index.html/ma-san.org/index.html/ma-san.org/index.html</span>
+</li>
+<li class="line event system">
+<span class="time">2011/08/24</span>
+<span class="message"><a href="#">システム系のお知らせ</a></span>
+<span class="address">http://ma-san.org/index.html/ma-san.org/index.html/ma-san.org/index.html</span>
+</li>
+<li class="line no_link event nick"> 
+<span class="time">2011/08/23</span> 
+<span class="message">更新のお知らせ</span>
+</li>
+<li class="line event reply"> 
+<span class="time">2011/08/22</span> 
+<span class="message"><a href="#">対応のお知らせ</a></span>
+<span class="address">http://ma-san.org/index.html</span>
+</li>
+<li class="line event pickup"> 
+<span class="time">2011/08/21</span> 
+<span class="message"><a href="#">ピックアップ</a></span>
+<span class="address">http://ma-san.org/index.html</span>
+</li>
+<li class="line event quit"> 
+<span class="time">2011/08/20</span> 
+<span class="message"><a href="#">削除などのお知らせ</a></span>
+<span class="address">http://ma-san.org/index.html</span>
+</li>
+<li class="line event module"> 
+<span class="time">2011/08/20</span> 
+<span class="message"><a href="#">モジュール追加のお知らせ</a></span>
+<span class="address">http://ma-san.org/index.html</span>
+</li>
+<li class="line event error"> 
+<span class="time">2011/08/20</span> 
+<span class="message"><a href="#">エラー、緊急告知</a></span>
+<span class="address">http://ma-san.org/index.html</span>
+</li>
+</ul>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">テーブルモジュール一覧</h2>
+<table class="normalTable">
+<thead>
+<tr>
+<th>th</th>
+<th>th</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>td</td>
+<td>td</td>
+</tr>
+</tbody>
+</table>
+
+<table class="normalTable">
+<thead>
+<tr>
+<th>th</th>
+<td>td</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>th</th>
+<td>td</td>
+</tr>
+</tbody>
+</table>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+<section class="main-section">
+<div class="inner">
+<h2 class="hdg_A">フォームモジュール一覧</h2>
+
+<form class="post" method="post" action="#" id="normalForm">
+<fieldset>
+<legend accesskey="1">コンタクトフォーム</legend>
+<dl id="name-email">
+<dt>
+<label for="author">お名前</label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" name="author" size="20" value="">
+</dd>
+<dt>
+<label for="email">メールアドレス</label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" size="20" name="email" value="">
+</dd>
+</dl>
+<dl>
+<dt>
+<label for="url"><abbr title="Uniform Resource Identifer">URI</abbr></label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" name="url" size="20" value="http://">
+</dd>
+<dt>ラジオボタン</dt>
+<dd>
+<input type="radio" class="radio" tabindex="" value="" id="radio01" name="radio01">
+<label for="radio01">ラジオ01</label>
+<input type="radio" class="radio" tabindex="" value="" id="radio02" name="radio01">
+<label for="radio02">ラジオ02</label>
+<input type="radio" class="radio" tabindex="" value="" id="radio03" name="radio01">
+<label for="radio03">ラジオ02</label>
+</dd>
+<dt>
+<label>コメント</label>
+</dt>
+<dd>
+<textarea accesskey="2" class="inputField" tabindex="" name="text" rows="8"></textarea>
+</dd>
+</dl>
+<div class="action">
+<input type="submit" class="submit preview" name="preview" value="確認">
+<input type="submit" class="submit post" name="post" value="投稿">
+</div>
+</fieldset>
+</form>
+
+<form class="post" method="post" action="#" id="commentsForm">
+<fieldset>
+<legend accesskey="1">Comment Form</legend>
+<div>
+<p class="commentModerated">コメントを表示する前にオーナーの承認が必要になることがあります。</p>
+</div>
+<dl id="name-email">
+<dt>
+<label for="comment-author">Name</label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" id="comment-author" name="author" size="20" value="">
+</dd>
+<dt>
+<label for="comment-email">Mail address</label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" size="20" id="comment-email" name="email" value="">
+</dd>
+</dl>
+<dl>
+<dt>
+<label for="comment-url"><abbr title="Uniform Resource Identifer">URI</abbr></label>
+</dt>
+<dd>
+<input type="text" class="inputField" tabindex="" name="url" size="20" value="http://">
+</dd>
+<dt>Remember personal info</dt>
+<dd>
+<input type="radio" class="radio" tabindex="" value="" name="bakecookie">
+<label for="bakecookie">Yes</label>
+<input type="radio" class="radio" name="bakecookie" onclick="forgetMe(this.form)" onkeypress="forgetMe(this.form)" value="Forget Info">
+<label for="forget">No</label>
+</dd>
+<dt>
+<label for="comment-text"> Comment <span>スタイル指定用の一部の <abbr title="Hyper Text Markup Language">HTML</abbr>タグが使用できます</span> </label>
+</dt>
+<dd>
+<textarea accesskey="2" class="inputField" tabindex="" name="text" rows="8" onfocus="if (this.value == 'Add Your Comment') this.value = '';" onblur="if (this.value == '') this.value = 'Add Your Comment';">Add Your Comment</textarea>
+</dd>
+</dl>
+<div class="action">
+<input type="submit" class="submit preview" name="preview" value="Preview">
+<input type="submit" class="submit post" name="post" value="Post">
+</div>
+</fieldset>
+</form>
+</div><!-- .inner end -->
+</section><!-- .main-section end -->
+      </div><!-- .main-content end -->
+      <div class="main-utilities">
+        <div class="locator">
+          <ul class="linkList_B">
+            <li><a href="#">LinkText</a></li>
+            <li><a href="#">LinkText</a></li>
+            <li><a href="#">LinkText</a></li>
+            <li><a href="#">LinkText</a></li>
+          </ul>
+        </div><!-- .locator end -->
+      </div><!-- .main-utilities end -->
+    </div><!-- .container end -->
+  </main><!-- main end -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="inner">
+        <p class="hdg__site-title"><a href="/" itemprop="url">SiteTitle</a></p>
+        <nav role="navigation">
+          <ul class="signboard-nav pdn_btm_m" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+          <li itemprop="name"><a href="module.html" itemprop="url">Module</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+          <li itemprop="name"><a href="/XXXXXX/" itemprop="url">XXXXXX</a></li>
+          </ul><!-- .signboard-nav end -->
+        </nav><!-- nav end -->
+        <small class="copyright" lang="en">Copyright © SiteTitle All Rights Reserved.</small>
+      </div><!-- .inner end -->
+    </div><!-- #footer-content end -->
+  </footer><!-- footer end -->
+</body>
+</html>

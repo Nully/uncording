@@ -1,0 +1,125 @@
+@charset "utf-8";
+.list,
+.notes,
+.linkList,
+.glossary,
+.headline {
+  padding: 0;
+}
+
+ul.list li,
+.linkList li {
+  list-style: disc;
+  margin: 0.2em 0px;
+}
+ul.list li ul,
+.linkList li ul {
+  margin: 0 0 0 25px;
+}
+ol.list li {
+  list-style: decimal;
+}
+ol.list li ol {
+  margin: 0 0 0 25px;
+}
+.notes {
+  margin-left: 0px;
+}
+.glossary {
+  margin-left: 3px;
+  border-left: 3px solid #dddddd;
+}
+.glossary dt {
+  font-weight: bold;
+  margin: 0.4em 10px;
+}
+.glossary dd{
+  margin-left: 20px;
+  margin-bottom: 0.6em;
+}
+.headline {
+  list-style: none;
+  margin-left: 0px;
+}
+.headline li {
+  margin-bottom: 5px;
+}
+ul .date {
+  font-weight: bold;
+  float: left;
+  margin-right: 1em;
+}
+.news_list {
+  margin-left: 0;
+}
+.news_list li {
+  overflow: hidden;
+  list-style: none;
+  clear: both;
+  margin-bottom: 5px;
+}
+.news_list li ul {
+  margin-left: 0px;
+  float: left;
+}
+.news_list li ul .category {
+  min-width: 70px;
+  margin-top: 2px;
+  margin-right: 1em;
+  padding: 1px 5px;
+  float: left;
+  text-align: center;
+  font-size: 75%;
+  background: #f0f0f0;
+}
+.news_list li ul .category.primary {
+  color: $color_white;
+  background: $bg_primary;
+}
+.news_list li ul .category.success {
+  color: $color_white;
+  background: $bg_success;
+}
+.news_list li ul .category.warning {
+  color: $color_white;
+  background: $bg_warning;
+}
+.news_list li ul .category.danger {
+  color: $color_white;
+  background: $bg_danger;
+}
+.news_list li ul .category.info {
+  color: $color_white;
+  background: $bg_info;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+
+@media screen and (max-width:1079px){
+.headline li {
+  margin-bottom: 10px;
+}
+ul .date {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  clear: both;
+  border: 1px solid #dddddd;
+  background: #f0f0f0;
+  display: block;
+}
+.news_list {
+}
+.news_list li {
+  list-style: none;
+  clear: both;
+  margin-bottom: 10px;
+}
+.news_list li ul {
+  clear: both;
+  margin-left: 0px;
+}
+
+}

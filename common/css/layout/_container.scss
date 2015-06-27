@@ -1,0 +1,288 @@
+@charset "utf-8";
+.container {
+  width: $width_wrap;
+  margin: 35px auto;
+}
+.main-section {
+  width: $width_full;
+  overflow: hidden;
+  border-bottom: 1px solid #E7EEFA;
+}
+.inner {
+  width: $width_full;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.inner-full {
+  width: $width_full;
+  margin: 0 auto;
+  padding: 15px;
+}
+.row {
+  overflow: hidden;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row_n {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row:before,
+.row:after,
+.row_n:before,
+.row_n:after {
+  display: table;
+  content: " ";
+}
+[class^="locator"] {
+  clear: both;
+}
+[class^="col_x_"] {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1px;
+  float: left;
+}
+.row_n [class^="col_x_"] {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-height: 1px;
+  float: left;
+}
+
+.col_x_1 {
+  width: 8.33333333%;
+}
+.col_x_2 {
+  width: 16.66666667%;
+}
+.col_x_3 {
+  width: 25%;
+}
+.col_x_4 {
+  width: 33.33333333%;
+}
+.col_x_5 {
+  width: 41.66666667%;
+}
+.col_x_6 {
+  width: 50%;
+}
+.col_x_7 {
+  width: 58.33333333%;
+}
+.col_x_8 {
+  width: 66.66666667%;
+}
+.col_x_9 {
+  width: 75%;
+}
+.col_x_10 {
+  width: 83.33333333%;
+}
+.col_x_11 {
+  width: 91.66666667%;
+}
+.col_x_12 {
+  width: 100%;
+}
+
+.locator__index {
+  margin: 30px 0;
+}
+.locator_A .col_1 {
+  float: left;
+  width: 49%;
+}
+.locator_A .col_2 {
+  float: right;
+  width: 49%;
+}
+
+.locator_B .col_1 {
+  float: left;
+  width: 33%;
+}
+.locator_B .col_2 {
+  float: right;
+  width: 65%;
+}
+
+.locator_C .col_1 {
+  float: left;
+  width: 65%;
+}
+.locator_C .col_2 {
+  float: right;
+  width: 33%;
+}
+
+.locator_D .col_1 {
+  float: left;
+  width: 32.66666666%;
+}
+.locator_D .col_2 {
+  float: left;
+  margin-left: 1%;
+  width: 32.66666666%;
+}
+.locator_D .col_3 {
+  float: right;
+  width: 32.66666666%;
+}
+.col_l {
+  padding-left: 1em;
+}
+.col_w {
+  padding: 0 1em;
+}
+.col_r {
+  padding-right: 1em;
+}
+
+.box,
+.box__primary,
+.box__success,
+.box__warning,
+.box__danger,
+.box__info,
+.box__black,
+.box__none {
+  width: 100%;
+  padding: 15px;
+}
+.box {background: $bg_white; border: 1px solid $bg_default;}
+.box__primary {background: $bg_white; border: 3px solid $bg_primary; color: $color_default;}
+.box__success {background: $bg_white; border: 3px solid $bg_success; color: $color_default;}
+.box__warning {background: $bg_white; border: 3px solid $bg_warning; color: $color_default;}
+.box__danger {background: $bg_white; border: 3px solid $bg_danger; color: $color_default;}
+.box__info {background: $bg_white; border: 3px solid $bg_info; color: $color_default;}
+.box__black {background: $bg_white; border: 3px solid $bg_black; color: $color_default;}
+.box__none {background: $bg_default; border:  3px solid $bg_default; color: $color_default; opacity: 0.3;}
+
+[class*="category"] {
+  text-shadow: none;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
+.category {background: $bg_white;}
+.category__primary {background: $bg_primary; color: $color_white;}
+.category__success {background: $bg_success; color: $color_white;}
+.category__warning {background: $bg_warning; color: $color_white;}
+.category__danger {background: $bg_danger; color: $color_white;}
+.category__info {background: $bg_info; color: $color_white;}
+.category__black {background: $bg_black; color: $color_white;}
+.category__none {background: $bg_black;  color: $color_white; opacity: 0.3;}
+
+.category--border {border-left: 5px solid $bg_default;}
+.category__primary--border {border-left: 5px solid $bg_primary;}
+.category__success--border {border-left: 5px solid $bg_success;}
+.category__warning--border {border-left: 5px solid $bg_warning;}
+.category__danger--border {border-left: 5px solid $bg_danger;}
+.category__info--border {border-left: 5px solid $bg_info;}
+.category__black--border {border-left: 5px solid $bg_black;}
+
+.circle {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  color: #fff;
+  display: block;
+  width: 2em;
+  height: 2em;
+  font-size: 5.5em;
+  border-radius: 100%;
+  border: 3px solid #dddddd;
+  color: #444;
+  line-height: 2em;
+  margin: 0 auto 10px!important;
+  overflow: hidden;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media #{$media_middle}{
+.inner {
+  width: $width_full;
+  padding: 20px 15px;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row_n {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+[class^="locator"] {
+  width: 100%;
+  padding: 0;
+}
+
+}
+
+@media #{$media_small}{
+[class^="locator_"] .col_1,
+[class^="locator_"] .col_2,
+[class^="locator_"] .col_3 {
+  float: none;
+  margin-left: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.locator_A.flat .col_1 {
+  float: left;
+  width: 49%;
+}
+.locator_A.flat .col_2 {
+  float: right;
+  width: 49%;
+}
+
+.locator_B.flat .col_1 {
+  float: left;
+  width: 33%;
+}
+.locator_B.flat .col_2 {
+  float: right;
+  width: 65%;
+}
+
+.locator_C.flat .col_1 {
+  float: left;
+  width: 65%;
+}
+.locator_C.flat .col_2 {
+  float: right;
+  width: 33%;
+}
+
+.locator_D.flat .col_1 {
+  float: left;
+  width: 32.5%;
+}
+.locator_D.flat .col_2 {
+  float: left;
+  margin-left: 1%;
+  width: 32.5%;
+}
+.locator_D.flat .col_3 {
+  float: right;
+  width: 33%;
+}
+
+[class^="col_x_"] {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+}

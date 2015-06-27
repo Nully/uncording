@@ -1,0 +1,129 @@
+@charset "utf-8";
+[class^="btn"] {
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 280px;
+  min-width: 120px;
+}
+.btn {
+  background: #ffffff;
+  color: #999999; 
+}
+.btn-bl {
+  background: #333;
+  border: 1px solid #333;
+}
+.btn-primary {
+  background: #1054A0;
+  border: 1px solid #1054A0;
+}
+.btn-success {
+  background: #007C81;
+  border: 1px solid #007C81;
+}
+.btn-warning {
+  background: #8F7104;
+  border: 1px solid #8F7104;
+}
+.btn-danger {
+  background: #BC2020;
+  border: 1px solid #BC2020;
+}
+.btn-info {
+  background: #5FBFDB;
+  border: 1px solid #5FBFDB;
+}
+.btn-clear {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, .4);
+  border: 1px solid #fff;
+}
+
+.btn:visited {
+  color: #000;
+}
+.btn-bl:visited,
+.btn-primary:visited,
+.btn-success:visited,
+.btn-warning:visited,
+.btn-danger:visited,
+.btn-info:visited,
+.btn-clear:visited {
+  color: #fafafa;
+}
+.btn:hover,
+.btn-bl:hover,
+.btn-primary:hover,
+.btn-success:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-info:hover,
+.btn-clear:hover {
+  color: #ffffff;
+  opacity: .9;
+  text-decoration: underline;
+}
+
+.btn:hover {
+  color: #444444;
+}
+.btn-bl:hover {
+}
+.btn-primary:hover {
+}
+.btn-success:hover {
+}
+.btn-warning:hover {
+}
+.btn-danger:hover {
+}
+.btn-info:hover {
+}
+.btn-clear:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.half {
+  width: 100%;
+  max-width: 49%;
+}
+.full {
+  width: 100%;
+  max-width: 100%;
+}
+.large {
+  max-width: 480px;
+  font-size: 20px;
+}
+.middle {
+  max-width: 320px;
+  font-size: 18px;
+}
+.small {
+  max-width: 160px;
+  font-size: 14px;
+}
+
+@media #{$media_middle}{
+  [class^="btn"] {
+    max-width: 480px;
+    min-width: 150px;
+    width: 90%;
+  }
+}
+
+@media #{$media_small}{
+  [class^="btn"] {
+    max-width: 300px;
+    min-width: 150px;
+    width: 90%;
+  }
+}

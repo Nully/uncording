@@ -1,0 +1,33 @@
+@charset "utf-8";
+body {
+  color: #283138;
+  font: 400 16px/24px Roboto,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height:1.5;
+  -webkit-text-size-adjust:100%;
+}
+
+header, footer, nav, section, article, figure, aside {
+  display:block;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6,
+header, article, section, footer,
+blockquote, pre, address, ul, ol, li, dl, dt, dd,
+table, th, td, form, fieldset, input, img, a, span {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media screen and (max-width:640px){
+body {
+}
+}

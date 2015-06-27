@@ -1,0 +1,58 @@
+@charset "utf-8";
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.strong {
+  font-weight: bold;
+}
+
+.f10 {
+  font-size: fz(10);
+}
+
+.f12 {
+  font-size: fz(12);
+}
+
+.f14 {
+  font-size: fz(14);
+}
+
+.f16 {
+  font-size: fz(16);
+}
+
+.f18 {
+  font-size: fz(18);
+}
+
+.f20 {
+  font-size: fz(20);
+}
+
+.f22 {
+  font-size: fz(22);
+}
+
+.f24 {
+  font-size: fz(24);
+}
+
+.notes {
+  color: #999999;
+  list-style: none;
+}
+
+.red {
+  color: #cc0000;
+}
+
+.italic {
+  font-style: italic;
+}

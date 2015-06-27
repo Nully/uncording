@@ -1,0 +1,20 @@
+@charset "utf-8";
+.clearFix::after,
+section::after,
+.container::after,
+.row::after,
+.row_n::after,
+[class^="locator"]::after,
+[class*="locator"]::after,
+#header::after,
+.signboard::after,
+.main-content::after,
+.main-utilities::after,
+#footer::after,
+#main::after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}

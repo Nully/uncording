@@ -1,0 +1,251 @@
+@charset "utf-8";
+.main-content {
+  width: $width_main;
+  float: left;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  clear: both;
+}
+
+.slogan {
+  background: #FAFAFF;
+  overflow: hidden;
+  margin: 0;
+  h2 {
+    font-size: fz(24);
+    font-weight: normal;
+    text-align: center;
+  }
+  .slogan__html5css3 {
+    padding: 60px 15px;
+    border-top: 10px solid #1054A0;
+    h2 {
+      color: #1054A0;
+    }
+  }
+  .slogan__rwd {
+    padding: 60px 15px;
+    border-top: 10px solid #BC2020;
+    h2 {
+      color: #BC2020;
+    }
+  }
+  .slogan__bem {
+    padding: 60px 15px;
+    border-top: 10px solid #8F7104;
+    h2 {
+      color: #8F7104;
+    }
+  }
+  .slogan__accessibility {
+    padding: 60px 15px;
+    border-top: 10px solid #007C81;
+    h2 {
+      color: #007C81;
+    }
+  }
+  .slogan__html5css3--box {
+    background: #1054A0;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+  }
+  .slogan__rwd--box {
+    background: #BC2020;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+  }
+  .slogan__bem--box {
+    background: #8F7104;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+  }
+  .slogan__accessibility--box {
+    background: #007C81;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+div.topicPath {
+  clear: both;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  list-style-type: none;
+}
+p.topicPath {
+  margin: 1.3em 9em 0.3em 0px;
+  padding-bottom: 0.8em;
+  font-size: 85%;
+  line-height: 1;
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  text-justify: none; 
+  letter-spacing: 1px;
+}
+
+p.topicPath a:link,
+p.topicPath a:visited {
+  padding: 0.1em 0.5em;
+  border: 1px solid #eee;
+  color: #888;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+p.topicPath a:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #222;
+}
+
+p.topicPath span.current {
+  padding: 0.1em 0 0.1em 0.1em;
+  position: relative;
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: 0 0.3em;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+
+@media #{$media_middle}{
+  .main-content {
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    clear: both;
+    float: left;
+    width: $width_full;
+  }
+  .content.column2 {
+    padding: 0px 0px 0px 0px;
+  }
+  div.topicPath {
+    margin: 0;
+    padding: 10px 0px;
+    border: none;
+  }
+  .slogan {
+    h2 {
+      font-size: fz(18);
+    }
+    .slogan__html5css3--box {
+      width: 25%;
+      background: none;
+      color: #1054A0;
+      text-align: center;
+      padding: 15px;
+    }
+    .slogan__rwd--box {
+      width: 25%;
+      background: none;
+      color: #BC2020;
+      text-align: center;
+      padding: 15px;
+    }
+    .slogan__bem--box {
+      width: 25%;
+      background: none;
+      color: #8F7104;
+      text-align: center;
+      padding: 15px;
+    }
+    .slogan__accessibility--box {
+      width: 25%;
+      background: none;
+      color: #007C81;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+}
+@media #{$media_small}{
+  .slogan {
+    background: #FAFAFF;
+    overflow: hidden;
+    margin: 0;
+    h2 {
+      font-size: fz(14);
+      font-weight: normal;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .slogan__html5css3 {
+      width: 100%;
+      padding: 15px;
+      border-top: none;
+      background: #1054A0;
+      h2 {
+        font-size: fz(14);
+        color: #FFFFFF;
+      }
+      p {
+        font-size: fz(10);
+        color: #FFFFFF;
+      }
+    }
+    .slogan__rwd {
+      width: 100%;
+      padding: 15px;
+      border-top: none;
+      background: #BC2020;
+      h2 {
+        font-size: fz(14);
+        color: #FFFFFF;
+      }
+      p {
+        font-size: fz(10);
+        color: #FFFFFF;
+      }
+    }
+    .slogan__bem {
+      width: 100%;
+      padding: 15px;
+      border-top: none;
+      background: #8F7104;
+      h2 {
+        font-size: fz(14);
+        color: #FFFFFF;
+      }
+      p {
+        font-size: fz(10);
+        color: #FFFFFF;
+      }
+    }
+    .slogan__accessibility {
+      width: 100%;
+      padding: 15px;
+      border-top: none;
+      background: #007C81;
+      margin-bottom: 20px;
+      h2 {
+        font-size: fz(14);
+        color: #FFFFFF;
+      }
+      p {
+        font-size: fz(10);
+        color: #FFFFFF;
+      }
+    }
+    .slogan__html5css3--box,
+    .slogan__rwd--box,
+    .slogan__bem--box,
+    .slogan__accessibility--box {
+      width: 100%;
+      text-align: center;
+      padding: 0px;
+    }
+  }
+}

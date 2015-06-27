@@ -1,0 +1,17 @@
+@charset "utf-8";
+del {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+del[datetime]:before {
+  content: " ( "attr(datetime)"\00524a\009664) ";
+}
+
+ins {
+  border-bottom: 1px dotted #444;
+  text-decoration: none;
+}
+
+ins[datetime]::before {
+  content: " ( "attr(datetime)"\004fee\006b63) ";
+}

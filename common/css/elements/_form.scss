@@ -1,0 +1,79 @@
+@charset "utf-8";
+input.radio {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+input, textarea {
+  margin: 0.5em 10px;
+  padding: 1px 0.2em;
+  line-height: 1.5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d4d4d4 #eee #eee #d4d4d4;
+  font-family: Arial, Helvetica, "ヒラギノ角ゴ Pro W3", sans-serif;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+input.submit {
+  border-color: #fff;
+  color: #666;
+  border: none;
+  padding: 5px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c2c2c2 #8f8f8f #8f8f8f #c2c2c2;
+  font-size: 85%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+select, input, textarea {
+  font-size: 99%;
+}
+form dl, form p {
+  margin: 0.5em 20px;
+}
+form.post {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+form.post dl {
+
+}
+
+form.post dl dt {
+  margin: 10px 0 5px 0;
+}
+
+form.post dl dd {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+form.post dl input {
+  margin: 0;
+}
+
+form.post textarea {
+  margin: 0;
+  width: 90%;
+}
+
+form.post div.action {
+  margin: 0 20px 1em;
+}
+
+form.post div.action input.submit {
+  margin: 0.4em 0;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media screen and (max-width:640px){
+form.post input.inputField,
+form.post textarea {
+  width: 100%;
+}
+}

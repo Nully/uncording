@@ -1,0 +1,77 @@
+@charset "utf-8";
+.sender {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 8px;
+  background-color: #C90064;
+  font-weight: normal;
+ 
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  -webkit-border-radius: 3px;
+  -webkit-animation-name: call;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.5,0,0.5,1);
+ 
+ }
+
+.text .sender {
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.4);
+}
+
+/* Anim */
+ 
+@-webkit-keyframes call {
+  0% {
+    -webkit-transform: scale(0.900);
+  }
+  10% {
+    -webkit-transform: scale(1.100);
+  }
+  20% {
+    -webkit-transform: scale(0.927);
+  }
+  30% {
+    -webkit-transform: scale(1.051);
+  }
+  40% {
+    -webkit-transform: scale(0.965);
+  }
+  50% {
+    -webkit-transform: scale(1.021);
+  }
+  60% {
+    -webkit-transform: scale(0.987);
+  }
+  70% {
+    -webkit-transform: scale(1.0027);
+  }
+  80% {
+    -webkit-transform: scale(0.9992);
+  }
+  90% {
+    -webkit-transform: scale(1.0006);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+.line[highlight=true] .sender {
+  color: #fff!important;
+}
+ 
+.line[highlight=true] .message{
+  
+}
+
+.purupuru {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 8px;
+  background-color: #0A7FB2;
+  font-weight: normal;
+  background-repeat: repeat-x;
+}

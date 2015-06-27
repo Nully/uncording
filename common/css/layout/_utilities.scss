@@ -1,0 +1,35 @@
+@charset "utf-8";
+.main-utilities {
+  width: $width_side;
+  float: right;
+  padding: 0;
+  margin: 0;
+  background: $bg_white;
+}
+
+.main-utilities section {
+  padding: 15px;
+}
+.main-utilities:last-child {
+  border-bottom:none;
+}
+
+/*--------------------------------------
+  @media screen
+---------------------------------------*/
+@media #{$media_middle}{
+  .main-utilities {
+    float: none;
+    width: 100%;
+    padding: 0 ;
+  }
+  .main-utilities section {
+    padding:  20px 15px;
+  }
+}
+
+@media #{$media_small}{
+  .main-utilities h2 {
+    text-align: center!important;
+  }
+}
